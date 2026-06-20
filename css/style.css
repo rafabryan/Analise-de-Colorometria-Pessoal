@@ -1,0 +1,153 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    background-color: #d48282;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.cores-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.circulo-cor {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Transforma a div em um círculo */
+    border: 0 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#container .card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    padding: 4px 8px;
+    border: 1px solid #767676;
+    background-color: #efefef;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #e99c9c;
+}
+
+.bloco-botao {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+input[type="file"] {   
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+/* Container para organizar o espaçamento */
+.container-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre o bloco de upload e o botão de processar */
+    margin-top: 40px;
+}
+
+/* Alinha o botão de upload e o texto lado a lado */
+.grupo-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Esconde o input original e feio do navegador */
+.input-escondido {
+    display: none;
+}
+
+/* Estilo base para ambos os botões */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas e modernas */
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Leve sombra para dar profundidade */
+}
+
+/* Cores do botão de Processar (Destaque Principal) */
+.btn-primario {
+    background-color: #8B4545; /* Tom de vinho elegante que combina com o rosa */
+    color: white;
+    width: fit-content; /* O botão ocupa apenas o tamanho do texto */
+}
+
+.btn-primario:hover {
+    background-color: #6A3434; /* Fica mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de levantar levemente */
+}
+
+/* Cores do botão de Escolher Arquivo (Ação Secundária) */
+.btn-secundario {
+    background-color: white;
+    color: #8B4545;
+    border: 2px solid #8B4545;
+}
+
+.btn-secundario:hover {
+    background-color: #f9f2f2;
+}
+
+/* Estilo do texto "Nenhum arquivo..." */
+.texto-arquivo {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-style: italic;
+}
